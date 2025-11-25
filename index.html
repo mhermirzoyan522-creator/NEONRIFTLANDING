@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>NEON RIFT — киберпанк-игра</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">NEON<span>RIFT</span></div>
+
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav__link">Главная</a>
+        <a href="#story" class="nav__link">Сюжет</a>
+        <a href="#features" class="nav__link">Геймплей</a>
+        <a href="#editions" class="nav__link">Издания</a>
+        <a href="#requirements" class="nav__link">Требования</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-orb hero__bg-orb--left"></div>
+    <div class="hero__bg-orb hero__bg-orb--right"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow">Новая киберпанк-экшен-игра</p>
+        <h1 class="hero__title">Погрузись в город неона и хаоса</h1>
+        <p class="hero__subtitle">
+          NEON RIFT — динамичный шутер в мрачном футуристичном мегаполисе.
+          Взломай систему, собери свою команду и реши судьбу города.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#editions" class="btn btn--primary">Купить сейчас</a>
+          <button class="btn btn--secondary js-open-trailer">Смотреть трейлер</button>
+        </div>
+
+        <p class="hero__note">Доступно на PC. Ранний доступ — уже сейчас.</p>
+
+        <div class="hero__platforms">
+          <span>Windows</span>
+          <span>Steam</span>
+          <span>GamePass*</span>
+        </div>
+      </div>
+
+      <div class="hero__art reveal">
+        <div class="hero__art-glow"></div>
+        <div class="hero__art-card">
+          <div class="hero__art-header">
+            <span class="hero__status-dot"></span>
+            <span>Ночной рейд • Миссия 07</span>
+          </div>
+          <div class="hero__art-screen">
+            <div class="hero__scanlines"></div>
+            <div class="hero__city-tiles">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero__player-hud">
+              <div class="hero__hp">HP 86%</div>
+              <div class="hero__ammo">AMMO 24/120</div>
+            </div>
+          </div>
+          <div class="hero__art-footer">
+            <span>Цель: взломать центральный узел</span>
+            <span class="hero__badge">Хардкор</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СЮЖЕТ -->
+  <section class="section section--dark" id="story">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Город, который живёт по своим правилам</h2>
+        <p class="section__subtitle">
+          В NEON RIFT ты — наёмник, который застрял между корпорациями, уличными кланами и ИИ, вышедшим из-под контроля.
+        </p>
+      </div>
+
+      <div class="story reveal">
+        <div class="story__text">
+          <p>
+            Неоновые улицы, бесконечный дождь и свет голограмм — здесь каждый угол может быть ловушкой.
+            Тебя нанимают, чтобы выполнить «простое» задание: взломать экспериментальную систему контроля города.
+          </p>
+          <p>
+            Но чем глубже ты погружаешься, тем больше понимаешь: никто не говорит правду. Корпорации скрывают провалы,
+            хакеры играют в свои игры, а город сам пытается защитить свои тайны.
+          </p>
+          <p>
+            Сделаешь выбор в пользу денег, свободы или хаоса — и увидишь, как город меняется вместе с тобой.
+          </p>
+        </div>
+        <div class="story__card">
+          <h3>Особенности истории</h3>
+          <ul>
+            <li>Ветвящийся сюжет с разными концовками.</li>
+            <li>Решения в миссиях влияют на районы города.</li>
+            <li>Персонажи, которые запоминают твои поступки.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ГЕЙМПЛЕЙ -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section__title">Геймплей, который держит в тонусе</h2>
+      <p class="section__subtitle">
+        Смесь динамичного шутера, стелса и хакерства. Игра подстраивается под твой стиль.
+      </p>
+
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">⚡</div>
+          <h3>Динамичные рейды</h3>
+          <p>
+            Быстрые миссии в разных районах города: крыши небоскрёбов, подземные тоннели, дата-центры и клубы.
+          </p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">💾</div>
+          <h3>Хакерские способности</h3>
+          <p>
+            Взламывай камеры, дрона, турели и импланты врагов. Создавай хаос, не делая ни единого выстрела.
+          </p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">🧠</div>
+          <h3>Прокачка билда</h3>
+          <p>
+            Собирай чипы и импланты, чтобы настроить своего героя под агрессию, стелс или поддержку команды.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ИЗДАНИЯ -->
+  <section class="section section--dark" id="editions">
+    <div class="container">
+      <h2 class="section__title section__title--light">Выбери своё издание</h2>
+      <p class="section__subtitle section__subtitle--light">
+        Все предзаказы включают ранний доступ и уникальный внутриигровой значок.
+      </p>
+
+      <div class="editions reveal">
+        <article class="edition-card">
+          <h3 class="edition-card__name">Standard</h3>
+          <p class="edition-card__desc">Базовая версия игры для тех, кто хочет просто ворваться в город.</p>
+          <div class="edition-card__price">1 490 ₽</div>
+          <ul class="edition-card__list">
+            <li>Полная версия игры.</li>
+            <li>Ранний доступ за 48 часов до релиза.</li>
+            <li>Эксклюзивный внутриигровой значок.</li>
+          </ul>
+          <button class="btn btn--ghost">Купить Standard</button>
+        </article>
+
+        <article class="edition-card edition-card--highlight">
+          <div class="edition-card__label">Лучший выбор</div>
+          <h3 class="edition-card__name">Deluxe</h3>
+          <p class="edition-card__desc">Для тех, кто хочет максимум стиля и контента.</p>
+          <div class="edition-card__price">2 490 ₽</div>
+          <ul class="edition-card__list">
+            <li>Всё из Standard.</li>
+            <li>Набор неоновых скинов для оружия.</li>
+            <li>Дополнительные побочные миссии.</li>
+          </ul>
+          <button class="btn btn--primary">Купить Deluxe</button>
+        </article>
+
+        <article class="edition-card">
+          <h3 class="edition-card__name">Collector's</h3>
+          <p class="edition-card__desc">Для истинных фанатов киберпанка.</p>
+          <div class="edition-card__price">3 990 ₽</div>
+          <ul class="edition-card__list">
+            <li>Всё из Deluxe.</li>
+            <li>Цифровой артбук и саундтрек.</li>
+            <li>Уникальный скин персонажа «Легенда города».</li>
+          </ul>
+          <button class="btn btn--ghost">Купить Collector's</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- СИСТЕМНЫЕ ТРЕБОВАНИЯ -->
+  <section class="section" id="requirements">
+    <div class="container">
+      <h2 class="section__title">Системные требования</h2>
+      <p class="section__subtitle">
+        Финальные требования могут немного отличаться в релизной версии.
+      </p>
+
+      <div class="req-grid reveal">
+        <article class="req-card">
+          <h3>Минимальные</h3>
+          <ul>
+            <li>OS: Windows 10 (64-bit)</li>
+            <li>Процессор: Intel i5 / Ryzen 5</li>
+            <li>ОЗУ: 8 GB</li>
+            <li>Видеокарта: GTX 1050 / RX 560</li>
+            <li>Место на диске: 40 GB</li>
+          </ul>
+        </article>
+
+        <article class="req-card">
+          <h3>Рекомендуемые</h3>
+          <ul>
+            <li>OS: Windows 11 (64-bit)</li>
+            <li>Процессор: Intel i7 / Ryzen 7</li>
+            <li>ОЗУ: 16 GB</li>
+            <li>Видеокарта: RTX 2060 / RX 5700</li>
+            <li>SSD: да, для комфортной игры</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--dark" id="faq">
+    <div class="container">
+      <h2 class="section__title section__title--light">Частые вопросы</h2>
+
+      <div class="accordion" id="faq-accordion">
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Будет ли мультиплеер?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            На релизе игра сфокусирована на сюжетной кампании. Кооперативные режимы рассматриваются для одного из обновлений.
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Есть ли поддержка геймпада?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            Да, игра поддерживает геймпады Xbox / PlayStation и большинство XInput-совместимых контроллеров.
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Можно ли стримить игру?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            Да, вы можете свободно стримить игру и монетизировать контент с NEON RIFT, соблюдая общие правила площадок.
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Поддерживаете ли вы модификации?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            В будущих обновлениях планируется базовая поддержка модов. В демо-лендинге это просто пример возможной фичи.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДПИСКА / КОНТАКТ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title">Подпишись на новости</h2>
+      <p class="section__subtitle">
+        Получай новости о новостях, патчах и скидках первым.
+      </p>
+
+      <div class="contact reveal">
+        <form class="contact__form" id="newsletter-form">
+          <label class="contact__field">
+            Email
+            <input type="email" name="email" placeholder="name@mail.ru" required>
+          </label>
+          <label class="contact__field">
+            Платформа
+            <select name="platform">
+              <option value="pc">PC</option>
+              <option value="steam">Steam</option>
+              <option value="other">Другое</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--primary">Подписаться</button>
+          <p class="contact__note">
+            Форма демонстрационная. В реальном проекте здесь можно подключить e-mail сервис.
+          </p>
+        </form>
+
+        <div class="contact__info">
+          <h3>Поддержка</h3>
+          <p>По вопросам сотрудничества и прессы:</p>
+          <p>Email: <strong>press@neonrift.game</strong></p>
+          <p>Telegram: <strong>@neonrift_support</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛКА ТРЕЙЛЕРА -->
+  <div class="modal" id="trailer-modal">
+    <div class="modal__overlay js-close-modal"></div>
+    <div class="modal__content">
+      <button class="modal__close js-close-modal" aria-label="Закрыть трейлер">×</button>
+      <h2 class="modal__title">Трейлер NEON RIFT</h2>
+      <p class="modal__subtitle">
+        В демо это просто заглушка. На реальном проекте можно встроить YouTube-видео или WebM-ролик.
+      </p>
+      <div class="modal__video-placeholder">
+        <span>Здесь может быть ваш трейлер</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© NEON RIFT, 2025</span>
+      <a href="#hero" class="footer__link">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
